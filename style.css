@@ -1,0 +1,179 @@
+
+html{
+    scroll-behavior: smooth;
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+body {
+    font-family: sans-serif;
+    background: linear-gradient(135deg, #7aa9ff, #f5ff99);
+    background-attachment: fixed;
+    color: #000000;
+    padding-top: 70px;
+}
+
+        #nav-bar {
+            background-color: rgba(255, 255, 255, 0.9);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            font-size:19px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            animation: slideDown 1s ease;
+        }
+
+        #nav-bar img {
+            width: 70px;
+            border-radius: 50%;
+        }
+
+        #nav-bar a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            margin-left: 20px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        #nav-bar a:hover {
+            color: #636363; 
+            transform: scale(1.1);
+        }
+
+        #form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 110px;
+            animation: fadeIn 2s ease;
+        }
+
+        #form input[type="email"] {
+    width:295px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#form input[type="email"]:focus {
+    border-color: #ff6e0e;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+        #form input[type="submit"] {
+            width: 100%;
+            max-width: 300px;
+            padding: 20px;
+            font-size: 14px;
+            background-color: #dfff6c;
+            border: none;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-align: center;
+
+        }
+
+        #form input[type="submit"]:hover {
+            background-color: #edf8ac;
+            transform: scale(1.1);
+
+        }
+
+        .section {
+            background-color: rgba(255, 255, 255, 0.774);
+            border-radius: 10px;
+            margin: 30px auto;
+            padding:40px;
+            max-width: 1000px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            margin-top:50px;
+            animation: fadeIn 2s ease;
+        }
+
+        .section h3 {
+            margin-bottom: 20px;
+            font-size: 1.rem;
+        }
+
+        .section ul {
+            list-style: none;
+            padding:10px;
+        }
+
+        .section ul li {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        #Products ul li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.3s ease;
+        }
+
+        #Products ul li:hover {
+            background-color: #a5a4a4;
+        }
+
+        #Products ul li span {
+            font-weight: bold;
+            color: #199e2b;
+        }
+
+
+        .footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    padding:45px;
+    color: #000000;
+    margin-top:50px;
+    animation: fadeIn 2s ease;
+}
+@keyframes slideDown {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
